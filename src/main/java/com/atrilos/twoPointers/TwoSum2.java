@@ -1,6 +1,4 @@
-package com.atrilos.twopointers;
-
-import java.util.Arrays;
+package com.atrilos.twoPointers;
 
 /**
  * Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order,

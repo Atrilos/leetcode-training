@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ContainsDuplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/GroupAnagrams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/TopFrequentElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/TwoSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ValidAnagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twopointers/ThreeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twopointers/TwoSum2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twopointers/ValidPalindrome.java" afterDir="false" />
+    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/MaxProfit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ThreeSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/twopointers/TwoSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/TwoSum2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/twopointers/ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ValidPalindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +52,13 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TwoSum2">
+  <component name="RunManager" selected="Application.com.atrilos.twoPointers.TwoSum2">
     <configuration name="TwoSum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.twopointers.TwoSum2" />
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.twoPointers.TwoSum2" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.twopointers.*" />
+          <option name="PATTERN" value="com.atrilos.twoPointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,7 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TwoSum2" />
+        <item itemvalue="Application.com.atrilos.twoPointers.TwoSum2" />
         <item itemvalue="Application.com.atrilos.arrays.TopFrequentElements" />
         <item itemvalue="Application.com.atrilos.arrays.GroupAnagrams" />
         <item itemvalue="Application.com.atrilos.arrays.TwoSum" />
@@ -150,8 +136,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655361559127</updated>
-      <workItem from="1655361562255" duration="15395000" />
+      <workItem from="1655361562255" duration="19812000" />
     </task>
+    <task id="LOCAL-00001" summary="day 1">
+      <created>1655379624290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655379624290</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,5 +161,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 1" />
   </component>
 </project>
