@@ -59,17 +59,14 @@ public class ValidSudoku {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
                 if (board[i][j] != '.') {
-                    if (set.contains("row" + i + board[i][j]))
+                    if (!set.add("row" + i + board[i][j]))
                         return false;
-                    set.add("row" + i + board[i][j]);
 
-                    if (set.contains("column" + j + board[i][j]))
+                    if (!set.add("column" + j + board[i][j]))
                         return false;
-                    set.add("column" + j + board[i][j]);
 
-                    if (set.contains("box" + (i / 3) + (j / 3) + board[i][j]))
+                    if (!set.add("box" + (i / 3) + (j / 3) + board[i][j]))
                         return false;
-                    set.add("box" + (i / 3) + (j / 3) + board[i][j]);
                 }
             }
         }
