@@ -29,7 +29,7 @@ import java.util.stream.IntStream;
  *
  * Constraints:
  *
- * 1 <= strs.length <= 104
+ * 1 <= strs.length <= 10^4
  * 0 <= strs[i].length <= 100
  * strs[i] consists of lowercase English letters.
  */

@@ -29,7 +29,10 @@ package com.atrilos.slidingWindow;
  */
 public class MaxProfit {
 
-    public int maxProfit(int[] prices) {
+    public static int maxProfit(int[] prices) {
+        if (prices == null) {
+            return 0;
+        }
         int maxDiff = 0;
         int minElement = Integer.MAX_VALUE;
 

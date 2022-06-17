@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/MaxProfit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ThreeSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ProductExceptSelf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ValidSudoku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/CharacterReplacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/LengthOfLongestSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/twopointers/TwoSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/TwoSum2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/twopointers/ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ValidPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ContainsDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ContainsDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/GroupAnagrams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/TopFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/TopFrequentElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/MaxProfit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/MaxProfit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,24 +46,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.31850353",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31850353&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.com.atrilos.twoPointers.TwoSum2">
-    <configuration name="TwoSum2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.twoPointers.TwoSum2" />
+}</component>
+  <component name="RunManager" selected="Application.ValidSudoku">
+    <configuration name="CharacterReplacement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.slidingWindow.CharacterReplacement" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.twoPointers.*" />
+          <option name="PATTERN" value="com.atrilos.slidingWindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,8 +71,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.atrilos.arrays.GroupAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.GroupAnagrams" />
+    <configuration name="LengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.slidingWindow.LengthOfLongestSubstring" />
+      <module name="neetcode.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atrilos.slidingWindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.slidingWindow.MaxProfit" />
+      <module name="neetcode.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atrilos.slidingWindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductExceptSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.ProductExceptSelf" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
@@ -79,34 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.atrilos.arrays.TopFrequentElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.TopFrequentElements" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.atrilos.arrays.TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.TwoSum" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.atrilos.arrays.ValidAnagram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.ValidAnagram" />
+    <configuration name="ValidSudoku" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.ValidSudoku" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
@@ -120,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.atrilos.twoPointers.TwoSum2" />
-        <item itemvalue="Application.com.atrilos.arrays.TopFrequentElements" />
-        <item itemvalue="Application.com.atrilos.arrays.GroupAnagrams" />
-        <item itemvalue="Application.com.atrilos.arrays.TwoSum" />
-        <item itemvalue="Application.com.atrilos.arrays.ValidAnagram" />
+        <item itemvalue="Application.ValidSudoku" />
+        <item itemvalue="Application.ProductExceptSelf" />
+        <item itemvalue="Application.CharacterReplacement" />
+        <item itemvalue="Application.LengthOfLongestSubstring" />
+        <item itemvalue="Application.MaxProfit" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +141,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655361559127</updated>
-      <workItem from="1655361562255" duration="19812000" />
+      <workItem from="1655361562255" duration="20536000" />
+      <workItem from="1655415182842" duration="401000" />
+      <workItem from="1655462561816" duration="15125000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1655379624290</created>
@@ -145,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655379624290</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day 1">
+      <created>1655410966730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655410966730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
