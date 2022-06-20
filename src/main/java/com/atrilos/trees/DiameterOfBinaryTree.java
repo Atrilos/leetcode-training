@@ -37,13 +37,13 @@ public class DiameterOfBinaryTree {
 
     private int dfs(TreeNode root) {
         if (root == null) {
-            return -1;
+            return 0;
         }
-        int left = 1 + dfs(root.left);
-        int right = 1 + dfs(root.right);
+        int left = dfs(root.left);
+        int right = dfs(root.right);
 
         res = Math.max(left + right, res);
 
-        return Math.max(left, right);
+        return 1 + Math.max(left, right);
     }
 }
