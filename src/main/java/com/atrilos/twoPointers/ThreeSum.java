@@ -1,5 +1,8 @@
 package com.atrilos.twoPointers;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -26,11 +29,59 @@ import java.util.List;
  * Constraints:
  *
  * 0 <= nums.length <= 3000
- * -105 <= nums[i] <= 105
+ * -10^5 <= nums[i] <= 10^5
  */
 public class ThreeSum {
 
+    public static void main(String[] args) {
+        ThreeSum ts = new ThreeSum();
+        System.out.println(ts.threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
+    }
+
     public List<List<Integer>> threeSum(int[] nums) {
-        return null;
+        Arrays.sort(nums);
+        LinkedList<List<Integer>> res = new LinkedList<>();
+
+        for (int i = 0; i < nums.length - 2; i++) {
+            if(nums[i] > 0) {
+                break;
+            }
+
+            if(i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+
+            int left = i + 1;
+            int right = nums.length - 1;
+
+            while(right > left) {
+
+                int sum = nums[i] + nums[left] + nums[right];
+
+                if(sum > 0) {
+                    --right;
+                } else if(sum < 0) {
+                    ++left;
+                } else {
+                    List<Integer> entry = new ArrayList<>();
+                    entry.add(nums[i]);
+                    entry.add(nums[left]);
+                    entry.add(nums[right]);
+                    res.add(entry);
+
+                    while(right > left && nums[left] == nums[left + 1]) {
+                        left++;
+                    }
+
+                    while(right > left && nums[right] == nums[right - 1]) {
+                        right--;
+                    }
+
+                    ++left;
+                    --right;
+                }
+            }
+        }
+        return res;
     }
 }
