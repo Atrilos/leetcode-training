@@ -32,10 +32,6 @@ package com.atrilos.twoPointers;
  */
 public class ContainerWithMostWater {
 
-    public static void main(String[] args) {
-        System.out.println(new ContainerWithMostWater().maxArea(new int[]{1,2,4,3}));
-    }
-
     public int maxArea(int[] height) {
         int res = 0;
         int left = 0, right = height.length - 1;
