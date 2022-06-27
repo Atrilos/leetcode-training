@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/bit/ReverseInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/bit/SumOfTwoInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/MinimumWindowSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/PermutationInString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/SlidingWindowMaximum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/stack/ReversePolishNotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/TrappingRainWater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/atrilos/bit/ReverseIntegerTest.java" afterDir="false" />
+    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/MajorityElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/MaxFrequency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/stack/CarFleet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/stack/DailyTemperatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/stack/GenerateParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/trees/BalancedBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ContainerWithMostWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ContainerWithMostWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/TwoSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/TwoSum2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ValidAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ValidAnagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/bit/ReverseBits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/bit/ReverseBits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/MinimumWindowSubstring.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.31850353",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "editor.preferences.import"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,9 +79,48 @@
       <recent name="com.atrilos.bit" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReversePolishNotation">
-    <configuration name="MinimumWindowSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.slidingWindow.MinimumWindowSubstring" />
+  <component name="RunManager" selected="Application.CarFleet">
+    <configuration name="CarFleet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.stack.CarFleet" />
+      <module name="neetcode.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atrilos.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DailyTemperatures" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.stack.DailyTemperatures" />
+      <module name="neetcode.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atrilos.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerateParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.stack.GenerateParentheses" />
+      <module name="neetcode.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atrilos.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxFrequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.slidingWindow.MaxFrequency" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
@@ -95,33 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PermutationInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.slidingWindow.PermutationInString" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.slidingWindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReverseInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.bit.ReverseInteger" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.bit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReversePolishNotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.atrilos.stack.ReversePolishNotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atrilos.stack.ReversePolishNotation" />
       <module name="neetcode.main" />
       <extension name="coverage">
@@ -134,26 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SlidingWindowMaximum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.slidingWindow.SlidingWindowMaximum" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.slidingWindow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReversePolishNotation" />
-        <item itemvalue="Application.SlidingWindowMaximum" />
-        <item itemvalue="Application.MinimumWindowSubstring" />
-        <item itemvalue="Application.PermutationInString" />
-        <item itemvalue="Application.ReverseInteger" />
+        <item itemvalue="Application.CarFleet" />
+        <item itemvalue="Application.DailyTemperatures" />
+        <item itemvalue="Application.GenerateParentheses" />
+        <item itemvalue="Application.MaxFrequency" />
+        <item itemvalue="Application.com.atrilos.stack.ReversePolishNotation" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +177,9 @@
       <workItem from="1655927448804" duration="7000" />
       <workItem from="1655963532276" duration="2674000" />
       <workItem from="1656010083792" duration="2678000" />
-      <workItem from="1656144001817" duration="20522000" />
+      <workItem from="1656144001817" duration="21471000" />
+      <workItem from="1656223740727" duration="2994000" />
+      <workItem from="1656325825137" duration="14755000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1655379624290</created>
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655824533915</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="day 5">
+      <created>1656185286855</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656185286855</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +259,8 @@
     <MESSAGE value="day 2" />
     <MESSAGE value="day 3" />
     <MESSAGE value="day 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 4" />
+    <MESSAGE value="day 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -278,11 +286,21 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/stack/ReversePolishNotation.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/stack/DailyTemperatures.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/stack/CarFleet.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="nums[end]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

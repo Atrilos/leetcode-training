@@ -1,23 +1,22 @@
 package com.atrilos.arrays;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
  * Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
- *
+ * <p>
  * Please implement encode and decode
- *
+ * <p>
  * Example1
- *
+ * <p>
  * Input: ["lint","code","love","you"]
  * Output: ["lint","code","love","you"]
  * Explanation:
  * One possible encode method is: "lint:;code:;love:;you"
- *
+ * <p>
  * Example2
- *
+ * <p>
  * Input: ["we", "say", ":", "yes"]
  * Output: ["we", "say", ":", "yes"]
  * Explanation:
@@ -27,9 +26,10 @@ public class EncDecString {
 
     public static void main(String[] args) {
         EncDecString ed = new EncDecString();
-        String encoded = ed.encode(List.of("linterrrrrrrr","codeeeeeeeeeeee","love","you"));
+        String encoded = ed.encode(List.of("linterrrrrrrr", "codeeeeeeeeeeee", "love", "you"));
         System.out.println(ed.decode(encoded));
     }
+
     /**
      * @param strs: a list of strings
      * @return encodes a list of strings to a single string.
