@@ -1,7 +1,6 @@
 package com.atrilos.heapPrioQueue;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -32,8 +31,8 @@ import java.util.PriorityQueue;
  *
  * Constraints:
  *
- * 1 <= k <= points.length <= 104
- * -104 < xi, yi < 104
+ * 1 <= k <= points.length <= 10^4
+ * -10^4 < xi, yi < 10^4
  */
 public class KClosestPointsToOrigin {
 
