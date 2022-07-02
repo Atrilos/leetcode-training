@@ -29,18 +29,14 @@ package com.atrilos.dp1d;
  * 1 <= n <= 45
  */
 public class ClimbingStairs {
-
-    int[] dp = new int[46];
     public int climbStairs(int n) {
-        if (n < 4)
-            return n;
-        int count;
-        if (dp[n] > 0) {
-            count = dp[n];
-        } else {
-            count = climbStairs(n - 1) + climbStairs(n - 2);
-            dp[n] = count;
+        int one = 1;
+        int two = 1;
+        for (int i = 0; i < n - 1; i++) {
+            int temp = one;
+            one = one + two;
+            two = temp;
         }
-        return count;
+        return one;
     }
 }

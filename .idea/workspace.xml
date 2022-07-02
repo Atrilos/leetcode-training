@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 7">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/XMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/backtracking/CombinationSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/backtracking/Subsets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/ClimbingStairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/graphs/CloneGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/graphs/NumberOfIslands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/heapPrioQueue/TaskScheduler.java" afterDir="false" />
+    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 8">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/HouseRobber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/HouseRobberII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/LongestPalindromicSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/MinCostClimbingStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/trees/HouseRobberIII.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/test/Metrics.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/test/QuickSelect.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/test/RadixSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/heapPrioQueue/KClosestPointsToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/heapPrioQueue/KClosestPointsToOrigin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/ClimbingStairs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <recent name="com.atrilos.bit" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClimbingStairs">
+  <component name="RunManager" selected="Application.LongestPalindromicSubstring">
     <configuration name="ClimbingStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atrilos.dp1d.ClimbingStairs" />
       <module name="neetcode.main" />
@@ -95,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.backtracking.CombinationSum" />
+    <configuration name="HouseRobber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.dp1d.HouseRobber" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.backtracking.*" />
+          <option name="PATTERN" value="com.atrilos.dp1d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.graphs.NumberOfIslands" />
+    <configuration name="HouseRobberII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.dp1d.HouseRobberII" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.graphs.*" />
+          <option name="PATTERN" value="com.atrilos.dp1d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.XMatrix" />
+    <configuration name="LongestPalindromicSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.dp1d.LongestPalindromicSubstring" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.arrays.*" />
+          <option name="PATTERN" value="com.atrilos.dp1d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.atrilos.backtracking.Subsets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.backtracking.Subsets" />
+    <configuration name="MinCostClimbingStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.dp1d.MinCostClimbingStairs" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.backtracking.*" />
+          <option name="PATTERN" value="com.atrilos.dp1d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestPalindromicSubstring" />
+        <item itemvalue="Application.HouseRobberII" />
+        <item itemvalue="Application.HouseRobber" />
+        <item itemvalue="Application.MinCostClimbingStairs" />
         <item itemvalue="Application.ClimbingStairs" />
-        <item itemvalue="Application.XMatrix" />
-        <item itemvalue="Application.NumberOfIslands" />
-        <item itemvalue="Application.CombinationSum" />
-        <item itemvalue="Application.com.atrilos.backtracking.Subsets" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +188,8 @@
       <workItem from="1656498196130" duration="1033000" />
       <workItem from="1656510574063" duration="13068000" />
       <workItem from="1656571946931" duration="498000" />
-      <workItem from="1656616924672" duration="2500000" />
+      <workItem from="1656616924672" duration="4112000" />
+      <workItem from="1656748664052" duration="11673000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1655379624290</created>
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656449237330</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="day 8">
+      <created>1656619841794</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656619841794</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +300,8 @@
     <MESSAGE value="day 5" />
     <MESSAGE value="day 6" />
     <MESSAGE value="day 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 7" />
+    <MESSAGE value="day 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -358,6 +365,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/arrays/XMatrix.java</url>
           <line>38</line>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/LongestPalindromicSubstring.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
