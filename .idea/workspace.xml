@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 12">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/FindMinimumInRotatedSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/Koko.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/MedianOfTwoSortedArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/SearchInRotatedSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/TimeMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/intervals/MinIntervalToIncludeEachQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/stack/LargestRectangleInHistogram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/atrilos/binarySearch/TimeMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,16 +96,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.atrilos.binarySearch" />
       <recent name="com.atrilos.bit" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuickSort">
-    <configuration name="GasStation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.greedy.GasStation" />
+  <component name="RunManager" selected="Application.MedianOfTwoSortedArrays">
+    <configuration name="FindMinimumInRotatedSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.binarySearch.FindMinimumInRotatedSortedArray" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.greedy.*" />
+          <option name="PATTERN" value="com.atrilos.binarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertInterval" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.intervals.InsertInterval" />
+    <configuration name="Koko" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.binarySearch.Koko" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.intervals.*" />
+          <option name="PATTERN" value="com.atrilos.binarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeetingRooms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.intervals.MeetingRooms" />
+    <configuration name="MedianOfTwoSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.binarySearch.MedianOfTwoSortedArrays" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.intervals.*" />
+          <option name="PATTERN" value="com.atrilos.binarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeIntervals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.intervals.MergeIntervals" />
+    <configuration name="SearchInRotatedSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.binarySearch.SearchInRotatedSortedArray" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.intervals.*" />
+          <option name="PATTERN" value="com.atrilos.binarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,26 +153,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.QuickSort" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="TimeMapTest.get" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.atrilos.binarySearch.TimeMapTest.get&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.MergeIntervals" />
-        <item itemvalue="Application.MeetingRooms" />
-        <item itemvalue="Application.InsertInterval" />
-        <item itemvalue="Application.GasStation" />
+        <item itemvalue="Application.MedianOfTwoSortedArrays" />
+        <item itemvalue="Gradle.TimeMapTest.get" />
+        <item itemvalue="Application.FindMinimumInRotatedSortedArray" />
+        <item itemvalue="Application.SearchInRotatedSortedArray" />
+        <item itemvalue="Application.Koko" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +226,8 @@
       <workItem from="1656972932674" duration="6868000" />
       <workItem from="1657000826624" duration="3330000" />
       <workItem from="1657102082993" duration="3685000" />
-      <workItem from="1657106906070" duration="1631000" />
+      <workItem from="1657106906070" duration="21091000" />
+      <workItem from="1657130178123" duration="8473000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1655379624290</created>
@@ -343,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657108339063</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="day 12">
+      <created>1657108605200</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657108605200</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,6 +483,29 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/intervals/MeetingRooms.java</url>
           <line>26</line>
           <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/intervals/MinIntervalToIncludeEachQuery.java</url>
+          <line>61</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/SearchInRotatedSortedArray.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/atrilos/binarySearch/TimeMapTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/MedianOfTwoSortedArrays.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
