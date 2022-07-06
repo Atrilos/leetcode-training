@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 10">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/intervals/InsertInterval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/intervals/MergeIntervals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/Metrics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/QuickSelect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/RadixSort.java" afterDir="false" />
+    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 11">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/intervals/MeetingRooms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/intervals/MeetingRoomsII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/intervals/NonOverlappingIntervals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +89,7 @@
       <recent name="com.atrilos.bit" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MergeIntervals">
+  <component name="RunManager" selected="Application.QuickSort">
     <configuration name="GasStation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atrilos.greedy.GasStation" />
       <module name="neetcode.main" />
@@ -118,25 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JumpGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.greedy.JumpGame" />
+    <configuration name="MeetingRooms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.intervals.MeetingRooms" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.greedy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JumpGameII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.greedy.JumpGameII" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.greedy.*" />
+          <option name="PATTERN" value="com.atrilos.intervals.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,13 +142,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.QuickSort" />
+      <module name="neetcode.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.MeetingRooms" />
         <item itemvalue="Application.MergeIntervals" />
         <item itemvalue="Application.InsertInterval" />
         <item itemvalue="Application.GasStation" />
-        <item itemvalue="Application.JumpGameII" />
-        <item itemvalue="Application.JumpGame" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +203,9 @@
       <workItem from="1656831241209" duration="33088000" />
       <workItem from="1656924122336" duration="1719000" />
       <workItem from="1656972932674" duration="6868000" />
-      <workItem from="1657000826624" duration="2188000" />
+      <workItem from="1657000826624" duration="3330000" />
+      <workItem from="1657102082993" duration="3685000" />
+      <workItem from="1657106906070" duration="1329000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1655379624290</created>
@@ -319,7 +319,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656886333493</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="day 11">
+      <created>1657003561313</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657003561313</updated>
+    </task>
+    <task id="LOCAL-00018" summary="day 11">
+      <created>1657108225296</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657108225296</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +361,8 @@
     <MESSAGE value="day 8" />
     <MESSAGE value="day 9" />
     <MESSAGE value="day 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 10" />
+    <MESSAGE value="day 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -431,6 +446,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/LongestCommonSubsequence.java</url>
           <line>38</line>
           <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/intervals/MeetingRooms.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
