@@ -48,7 +48,7 @@ public class MedianOfTwoSortedArrays {
         int start = 0, end = shortLen - 1;
         while (true) {
             // binary search the shorter array
-            int i = (end < 0) ? end : (start + end) / 2;
+            int i = (end < 0) ? end : start + (end - start) / 2;
             int j = half - i - 2;
 
             int shortLeft = (i >= 0) ? shortArray[i] : Integer.MIN_VALUE;
