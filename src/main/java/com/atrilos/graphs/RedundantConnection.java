@@ -38,10 +38,6 @@ import java.util.Arrays;
  * The given graph is connected.
  */
 public class RedundantConnection {
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(new RedundantConnection().findRedundantConnection(new int[][]{{1, 2}, {1, 3}, {2, 3}})));
-    }
-
     /**
      * Union find
      * TC - N
@@ -75,7 +71,9 @@ public class RedundantConnection {
     private void union(int[] parents, int a, int b) {
         if (parents[a] > parents[b]) {
             union(parents, b, a);
+        } else {
+            parents[a] += parents[b];
+            parents[b] = a;
         }
-        parents[b] = a;
     }
 }
