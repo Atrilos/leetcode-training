@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 15">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/backtracking/LetterCombinationsPhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/backtracking/NQueens.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/backtracking/PalindromePartitioning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/graphs/NumberOfConnectedComponentsInUndirectedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/greedy/HandOfStraights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/greedy/MergeTriplets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/greedy/PartitionLabels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/greedy/ValidParenthesisString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/mathGeometry/DetectSquares.java" afterDir="false" />
+    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 16">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/NonDecreasingArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/BurstBalloons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/graphs/RedundantConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/graphs/RedundantConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +94,13 @@
       <recent name="com.atrilos.bit" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumberOfConnectedComponentsInUndirectedGraph">
-    <configuration name="LetterCombinationsPhoneNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.backtracking.LetterCombinationsPhoneNumber" />
+  <component name="RunManager" selected="Application.BurstBalloons">
+    <configuration name="BurstBalloons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.dp1d.BurstBalloons" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.backtracking.*" />
+          <option name="PATTERN" value="com.atrilos.dp1d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,6 +121,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NonDecreasingArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.NonDecreasingArray" />
+      <module name="neetcode.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atrilos.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NumberOfConnectedComponentsInUndirectedGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atrilos.graphs.NumberOfConnectedComponentsInUndirectedGraph" />
       <module name="neetcode.main" />
@@ -142,39 +147,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromePartitioning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.backtracking.PalindromePartitioning" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.backtracking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidParenthesisString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.greedy.ValidParenthesisString" />
-      <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.greedy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BurstBalloons" />
+        <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.NonDecreasingArray" />
         <item itemvalue="Application.NumberOfConnectedComponentsInUndirectedGraph" />
         <item itemvalue="Application.NQueens" />
-        <item itemvalue="Application.LetterCombinationsPhoneNumber" />
-        <item itemvalue="Application.PalindromePartitioning" />
-        <item itemvalue="Application.ValidParenthesisString" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +213,14 @@
       <workItem from="1657526400861" duration="35049000" />
       <workItem from="1657575256316" duration="595000" />
       <workItem from="1657742038132" duration="5683000" />
-      <workItem from="1657777919575" duration="22850000" />
+      <workItem from="1657777919575" duration="23887000" />
+      <workItem from="1657831426331" duration="1324000" />
+      <workItem from="1657835737693" duration="44000" />
+      <workItem from="1658083251665" duration="1789000" />
+      <workItem from="1658139902373" duration="3554000" />
+      <workItem from="1658484274739" duration="1554000" />
+      <workItem from="1658501791701" duration="14000" />
+      <workItem from="1658606438757" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1655379624290</created>
@@ -397,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657565915739</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="day 16">
+      <created>1657812226035</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1657812226035</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +430,8 @@
     <MESSAGE value="day 13" />
     <MESSAGE value="day 14" />
     <MESSAGE value="day 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 15" />
+    <MESSAGE value="day 16" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -609,8 +610,8 @@
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/graphs/NumberOfConnectedComponentsInUndirectedGraph.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/BurstBalloons.java</url>
+          <line>34</line>
           <option name="timeStamp" value="128" />
         </line-breakpoint>
       </breakpoints>
