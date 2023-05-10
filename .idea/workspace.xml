@@ -4,15 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 16">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/NonDecreasingArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/BurstBalloons.java" afterDir="false" />
+    <list default="true" id="83b2f259-d80c-4e20-a4fd-606a4b4a6c8a" name="Changes" comment="day 18">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/CompressString.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/IncreasingTripletSubsequence.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/MaxOperations.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ReverseWords.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/LongestIncreasingSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/DungeonGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/EditDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/MaximalRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/MinPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/UniquePathsII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/slidingWindow/GcdOfStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ReverseVowels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ReverseVowels.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/MedianOfTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/MedianOfTwoSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/stack/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/stack/LargestRectangleInHistogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atrilos/twoPointers/ThreeSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -44,6 +62,8 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -58,6 +78,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="2AeEH1mBK8cIRts64fDpNJB52f6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -74,10 +95,17 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HARD/IdeaProjects/skypro-ads-online&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.31850353&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -90,17 +118,18 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.atrilos.mathGeometry" />
       <recent name="com.atrilos.binarySearch" />
       <recent name="com.atrilos.bit" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BurstBalloons">
-    <configuration name="BurstBalloons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.dp1d.BurstBalloons" />
+  <component name="RunManager" selected="Kotlin.CompressStringKt">
+    <configuration name="GcdOfStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.slidingWindow.GcdOfStrings" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.dp1d.*" />
+          <option name="PATTERN" value="com.atrilos.slidingWindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.backtracking.NQueens" />
+    <configuration name="MinPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.dp2d.MinPathSum" />
       <module name="neetcode.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atrilos.backtracking.*" />
+          <option name="PATTERN" value="com.atrilos.dp2d.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,46 +150,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NonDecreasingArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.NonDecreasingArray" />
+    <configuration name="CompressStringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.CompressStringKt" />
       <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfConnectedComponentsInUndirectedGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atrilos.graphs.NumberOfConnectedComponentsInUndirectedGraph" />
+    <configuration name="IncreasingTripletSubsequenceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.IncreasingTripletSubsequenceKt" />
       <module name="neetcode.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atrilos.graphs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+    <configuration name="ReverseWordsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atrilos.arrays.ReverseWordsKt" />
+      <module name="neetcode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BurstBalloons" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.NonDecreasingArray" />
-        <item itemvalue="Application.NumberOfConnectedComponentsInUndirectedGraph" />
-        <item itemvalue="Application.NQueens" />
+        <item itemvalue="Kotlin.CompressStringKt" />
+        <item itemvalue="Kotlin.IncreasingTripletSubsequenceKt" />
+        <item itemvalue="Kotlin.ReverseWordsKt" />
+        <item itemvalue="Application.GcdOfStrings" />
+        <item itemvalue="Application.MinPathSum" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +237,46 @@
       <workItem from="1658139902373" duration="3554000" />
       <workItem from="1658484274739" duration="1554000" />
       <workItem from="1658501791701" duration="14000" />
-      <workItem from="1658606438757" duration="1123000" />
+      <workItem from="1658606438757" duration="2189000" />
+      <workItem from="1658641335777" duration="7000" />
+      <workItem from="1658929607730" duration="2035000" />
+      <workItem from="1665313823974" duration="829000" />
+      <workItem from="1666348176784" duration="9299000" />
+      <workItem from="1666889658997" duration="3545000" />
+      <workItem from="1666943454303" duration="7825000" />
+      <workItem from="1667124235359" duration="298000" />
+      <workItem from="1667140167423" duration="13679000" />
+      <workItem from="1667198139756" duration="3797000" />
+      <workItem from="1667243637550" duration="213000" />
+      <workItem from="1667251944892" duration="106000" />
+      <workItem from="1667344094603" duration="190000" />
+      <workItem from="1667383597672" duration="27000" />
+      <workItem from="1673461373197" duration="377000" />
+      <workItem from="1675194997264" duration="141000" />
+      <workItem from="1675539582380" duration="663000" />
+      <workItem from="1675580708895" duration="25000" />
+      <workItem from="1676201906037" duration="3483000" />
+      <workItem from="1676308504819" duration="504000" />
+      <workItem from="1676309020909" duration="1340000" />
+      <workItem from="1676354889886" duration="651000" />
+      <workItem from="1676357197469" duration="607000" />
+      <workItem from="1676383652413" duration="1489000" />
+      <workItem from="1676493197373" duration="418000" />
+      <workItem from="1676541081342" duration="671000" />
+      <workItem from="1676576123817" duration="82000" />
+      <workItem from="1677156176145" duration="6831000" />
+      <workItem from="1677919314908" duration="1256000" />
+      <workItem from="1678390948547" duration="3719000" />
+      <workItem from="1678438723558" duration="790000" />
+      <workItem from="1678709360345" duration="8475000" />
+      <workItem from="1678955677287" duration="614000" />
+      <workItem from="1678958940064" duration="599000" />
+      <workItem from="1679138320939" duration="167000" />
+      <workItem from="1681105969878" duration="1722000" />
+      <workItem from="1683558966431" duration="7337000" />
+      <workItem from="1683611090284" duration="4324000" />
+      <workItem from="1683659307755" duration="3865000" />
+      <workItem from="1683697617649" duration="3354000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1655379624290</created>
@@ -397,7 +453,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657812226035</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="day 17">
+      <created>1658608089984</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1658608089984</updated>
+    </task>
+    <task id="LOCAL-00027" summary="day 18">
+      <created>1667252032533</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1667252032533</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +501,9 @@
     <MESSAGE value="day 14" />
     <MESSAGE value="day 15" />
     <MESSAGE value="day 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 16" />
+    <MESSAGE value="day 17" />
+    <MESSAGE value="day 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -536,7 +608,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/binarySearch/MedianOfTwoSortedArrays.java</url>
-          <line>36</line>
+          <line>38</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -613,6 +685,66 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/BurstBalloons.java</url>
           <line>34</line>
           <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/mathGeometry/MaximumDepthParentheses.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/linkedList/PalindromeLinkedList.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/linkedList/PalindromeLinkedList.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/mathGeometry/CountIntegerEvenDigitSum.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/atrilos/mathGeometry/CountIntegerEvenDigitSumTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/dp1d/LongestIncreasingSubsequence.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/MinPathSum.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/EditDistance.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/dp2d/MaximalRectangle.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/arrays/ReverseWords.kt</url>
+          <line>6</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/arrays/IncreasingTripletSubsequence.kt</url>
+          <line>9</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atrilos/arrays/CompressString.kt</url>
+          <line>36</line>
+          <option name="timeStamp" value="149" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

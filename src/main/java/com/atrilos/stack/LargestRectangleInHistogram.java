@@ -1,6 +1,7 @@
 package com.atrilos.stack;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * Given an array of integers heights representing the histogram's bar height where the width of each bar is 1,
@@ -30,21 +31,21 @@ import java.util.ArrayDeque;
 public class LargestRectangleInHistogram {
 
     public int largestRectangleArea(int[] heights) {
-        ArrayDeque<int[]> stack = new ArrayDeque<>();
+        Deque<int[]> deque = new ArrayDeque<>();
         int res = 0;
         for (int i = 0; i < heights.length; i++) {
             int start = i;
-            while (!stack.isEmpty() && heights[i] < stack.getLast()[0]) {
-                int[] last = stack.removeLast();
+            while (!deque.isEmpty() && heights[i] < deque.getLast()[0]) {
+                int[] last = deque.removeLast();
                 int lastStart = last[1];
                 int lastHeight = last[0];
                 res = Math.max(res, (i - lastStart) * lastHeight);
                 start = lastStart;
             }
-            stack.add(new int[]{heights[i], start});
+            deque.add(new int[]{heights[i], start});
         }
-        while (!stack.isEmpty()) {
-            int[] last = stack.removeLast();
+        while (!deque.isEmpty()) {
+            int[] last = deque.removeLast();
             int lastStart = last[1];
             int lastHeight = last[0];
             res = Math.max(res, (heights.length - lastStart) * lastHeight);
