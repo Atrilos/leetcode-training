@@ -53,31 +53,3 @@ public class InvertBinaryTree {
         return root;
     }
 }
-
-class TreeNodeJava {
-    int val;
-    TreeNodeJava left;
-    TreeNodeJava right;
-
-    TreeNodeJava() {
-    }
-
-    TreeNodeJava(int val) {
-        this.val = val;
-    }
-
-    TreeNodeJava(int val, TreeNodeJava left, TreeNodeJava right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-
-    @Override
-    public String toString() {
-        return "TreeNode{" +
-                "val=" + val +
-                ", left=" + left +
-                ", right=" + right +
-                '}';
-    }
-}
