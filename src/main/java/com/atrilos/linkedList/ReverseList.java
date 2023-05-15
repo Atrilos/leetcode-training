@@ -32,14 +32,14 @@ package com.atrilos.linkedList;
 public class ReverseList {
 
     public static void main(String[] args) {
-        ListNode head = new ListNode(2);
-        head.next = new ListNode(4);
-        head.next.next = new ListNode(6);
-        head.next.next.next = new ListNode(8);
-        head.next.next.next.next = new ListNode(10);
+        ListNodeJava head = new ListNodeJava(2);
+        head.next = new ListNodeJava(4);
+        head.next.next = new ListNodeJava(6);
+        head.next.next.next = new ListNodeJava(8);
+        head.next.next.next.next = new ListNodeJava(10);
 
         ReverseList rl = new ReverseList();
-        ListNode result = rl.reverseList2(head);
+        ListNodeJava result = rl.reverseList2(head);
         System.out.print("Nodes of the reversed LinkedList are: ");
         while (result != null) {
             System.out.print(result.val + " ");
@@ -48,15 +48,15 @@ public class ReverseList {
     }
 
     //iterative
-    public ListNode reverseList(ListNode head) {
+    public ListNodeJava reverseList(ListNodeJava head) {
         if (head == null)
             return null;
 
-        ListNode previous = null;
-        ListNode current = head;
+        ListNodeJava previous = null;
+        ListNodeJava current = head;
 
         while (current != null) {
-            ListNode nextNode = current.next;
+            ListNodeJava nextNode = current.next;
             current.next = previous;
             previous = current;
             current = nextNode;
@@ -66,10 +66,10 @@ public class ReverseList {
     }
 
     //recursive
-    public ListNode reverseList2(ListNode head) {
+    public ListNodeJava reverseList2(ListNodeJava head) {
         if (head == null || head.next == null)
             return head;
-        ListNode newHead = reverseList2(head.next);
+        ListNodeJava newHead = reverseList2(head.next);
         head.next.next = head;
         head.next = null;
 
@@ -77,18 +77,18 @@ public class ReverseList {
     }
 }
 
-class ListNode {
+class ListNodeJava {
     int val;
-    ListNode next;
+    ListNodeJava next;
 
-    ListNode() {
+    ListNodeJava() {
     }
 
-    ListNode(int val) {
+    ListNodeJava(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    ListNodeJava(int val, ListNodeJava next) {
         this.val = val;
         this.next = next;
     }

@@ -36,16 +36,16 @@ package com.atrilos.trees;
  */
 public class FindCorrespondingNodeInClone {
 
-    private TreeNode target;
-    private TreeNode ans;
+    private TreeNodeJava target;
+    private TreeNodeJava ans;
 
-    public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
+    public final TreeNodeJava getTargetCopy(final TreeNodeJava original, final TreeNodeJava cloned, final TreeNodeJava target) {
         this.target = target;
         findTargetValue(original, cloned);
         return ans;
     }
 
-    private void findTargetValue(TreeNode original, TreeNode cloned) {
+    private void findTargetValue(TreeNodeJava original, TreeNodeJava cloned) {
         if (original != null) {
             if (original.val == target.val && isEqual(original, target)) {
                 ans = cloned;
@@ -55,7 +55,7 @@ public class FindCorrespondingNodeInClone {
         }
     }
 
-    private boolean isEqual(TreeNode original, TreeNode target) {
+    private boolean isEqual(TreeNodeJava original, TreeNodeJava target) {
         if (original == null && target == null)
             return true;
         if (original == null || target == null)

@@ -30,11 +30,11 @@ public class MaxDepth {
 
     public static void main(String[] args) {
         MaxDepth ibt = new MaxDepth();
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.left = new TreeNode(4);
-        root.right.right = new TreeNode(5);
+        TreeNodeJava root = new TreeNodeJava(1);
+        root.left = new TreeNodeJava(2);
+        root.right = new TreeNodeJava(3);
+        root.left.left = new TreeNodeJava(4);
+        root.right.right = new TreeNodeJava(5);
         System.out.println(ibt.maxDepth3(root));
     }
 
@@ -42,7 +42,7 @@ public class MaxDepth {
      * DFS recursive - Depth First Search
      * 1ms
      */
-    public int maxDepth(TreeNode root) {
+    public int maxDepth(TreeNodeJava root) {
         if (root == null) {
             return 0;
         }
@@ -55,17 +55,17 @@ public class MaxDepth {
      * 1ms
      */
     @SuppressWarnings("all")
-    public int maxDepth2(TreeNode root) {
+    public int maxDepth2(TreeNodeJava root) {
         if (root == null) {
             return 0;
         }
         int depth = 0;
-        ArrayDeque<TreeNode> deque = new ArrayDeque<>();
+        ArrayDeque<TreeNodeJava> deque = new ArrayDeque<>();
         deque.offerLast(root);
 
         while (!deque.isEmpty()) {
             for (int i = 0, size = deque.size(); i < size; i++) {
-                TreeNode tmp = deque.pollLast();
+                TreeNodeJava tmp = deque.pollLast();
                 if (tmp.left != null)
                     deque.offerFirst(tmp.left);
                 if (tmp.right != null)
@@ -80,9 +80,9 @@ public class MaxDepth {
      * DFS iterative
      * 4ms
      */
-    public int maxDepth3(TreeNode root) {
+    public int maxDepth3(TreeNodeJava root) {
         int depth = 0;
-        ArrayDeque<AbstractMap.SimpleEntry<TreeNode, Integer>> deque = new ArrayDeque<>();
+        ArrayDeque<AbstractMap.SimpleEntry<TreeNodeJava, Integer>> deque = new ArrayDeque<>();
         deque.offerLast(new AbstractMap.SimpleEntry<>(root, 1));
 
         while (!deque.isEmpty()) {

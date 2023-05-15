@@ -30,12 +30,12 @@ public class DiameterOfBinaryTree {
 
     private int res = 0;
 
-    public int diameterOfBinaryTree(TreeNode root) {
+    public int diameterOfBinaryTree(TreeNodeJava root) {
         dfs(root);
         return res;
     }
 
-    private int dfs(TreeNode root) {
+    private int dfs(TreeNodeJava root) {
         if (root == null) {
             return 0;
         }

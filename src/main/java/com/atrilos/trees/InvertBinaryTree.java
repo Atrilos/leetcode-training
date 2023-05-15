@@ -30,23 +30,23 @@ public class InvertBinaryTree {
 
     public static void main(String[] args) {
         InvertBinaryTree ibt = new InvertBinaryTree();
-        TreeNode root = new TreeNode(4);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(7);
-        root.left.left = new TreeNode(1);
-        root.left.right = new TreeNode(3);
-        root.right.left = new TreeNode(6);
-        root.right.right = new TreeNode(9);
+        TreeNodeJava root = new TreeNodeJava(4);
+        root.left = new TreeNodeJava(2);
+        root.right = new TreeNodeJava(7);
+        root.left.left = new TreeNodeJava(1);
+        root.left.right = new TreeNodeJava(3);
+        root.right.left = new TreeNodeJava(6);
+        root.right.right = new TreeNodeJava(9);
         root = ibt.invertTree(root);
         System.out.println();
     }
 
-    public TreeNode invertTree(TreeNode root) {
+    public TreeNodeJava invertTree(TreeNodeJava root) {
         if (root == null) {
             return null;
         }
 
-        TreeNode tmp = invertTree(root.right);
+        TreeNodeJava tmp = invertTree(root.right);
         root.right = invertTree(root.left);
         root.left = tmp;
 
@@ -54,19 +54,19 @@ public class InvertBinaryTree {
     }
 }
 
-class TreeNode {
+class TreeNodeJava {
     int val;
-    TreeNode left;
-    TreeNode right;
+    TreeNodeJava left;
+    TreeNodeJava right;
 
-    TreeNode() {
+    TreeNodeJava() {
     }
 
-    TreeNode(int val) {
+    TreeNodeJava(int val) {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    TreeNodeJava(int val, TreeNodeJava left, TreeNodeJava right) {
         this.val = val;
         this.left = left;
         this.right = right;

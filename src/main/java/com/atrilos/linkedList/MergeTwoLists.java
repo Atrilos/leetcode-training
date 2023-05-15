@@ -33,17 +33,17 @@ package com.atrilos.linkedList;
 public class MergeTwoLists {
 
     public static void main(String[] args) {
-        ListNode list1 = new ListNode(2);
-        list1.next = new ListNode(4);
-        list1.next.next = new ListNode(6);
+        ListNodeJava list1 = new ListNodeJava(2);
+        list1.next = new ListNodeJava(4);
+        list1.next.next = new ListNodeJava(6);
 
-        ListNode list2 = new ListNode(1);
-        list2.next = new ListNode(3);
-        list2.next.next = new ListNode(5);
-        list2.next.next.next = new ListNode(7);
+        ListNodeJava list2 = new ListNodeJava(1);
+        list2.next = new ListNodeJava(3);
+        list2.next.next = new ListNodeJava(5);
+        list2.next.next.next = new ListNodeJava(7);
 
         MergeTwoLists mtl = new MergeTwoLists();
-        ListNode result = mtl.mergeTwoLists(list1, list2);
+        ListNodeJava result = mtl.mergeTwoLists(list1, list2);
         System.out.print("Nodes of the merged LinkedList are: ");
         while (result != null) {
             System.out.print(result.val + " ");
@@ -51,9 +51,9 @@ public class MergeTwoLists {
         }
     }
 
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        final ListNode root = new ListNode();
-        ListNode prev = root;
+    public ListNodeJava mergeTwoLists(ListNodeJava list1, ListNodeJava list2) {
+        final ListNodeJava root = new ListNodeJava();
+        ListNodeJava prev = root;
 
         while (list1 != null && list2 != null) {
             if (list1.val < list2.val) {

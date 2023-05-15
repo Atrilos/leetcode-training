@@ -32,14 +32,14 @@ package com.atrilos.trees;
  */
 public class BalancedBinaryTree {
 
-    public boolean isBalanced(TreeNode root) {
+    public boolean isBalanced(TreeNodeJava root) {
         if (root == null)
             return true;
         return Math.abs(computeHeight(root.left) - computeHeight(root.right)) <= 1
                 && isBalanced(root.right) && isBalanced(root.left);
     }
 
-    private int computeHeight(TreeNode node) {
+    private int computeHeight(TreeNodeJava node) {
         if (node == null)
             return 0;
         return Math.max(computeHeight(node.right), computeHeight(node.left)) + 1;

@@ -21,12 +21,12 @@ package com.atrilos.linkedList;
  */
 public class PalindromeLinkedList {
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
+        ListNodeJava head = new ListNodeJava(1);
         System.out.println(new PalindromeLinkedList().isPalindrome(head));
     }
-    public boolean isPalindrome(ListNode head) {
-        ListNode fast = head;
-        ListNode slow = head;
+    public boolean isPalindrome(ListNodeJava head) {
+        ListNodeJava fast = head;
+        ListNodeJava slow = head;
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
@@ -46,11 +46,11 @@ public class PalindromeLinkedList {
         return true;
     }
 
-    private ListNode reverseList(ListNode head) {
-        ListNode prev = null;
-        ListNode curr = head;
+    private ListNodeJava reverseList(ListNodeJava head) {
+        ListNodeJava prev = null;
+        ListNodeJava curr = head;
         while (curr != null) {
-            ListNode next = curr.next;
+            ListNodeJava next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;

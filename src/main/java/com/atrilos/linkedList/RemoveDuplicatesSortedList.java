@@ -2,10 +2,10 @@ package com.atrilos.linkedList;
 
 public class RemoveDuplicatesSortedList {
 
-    public ListNode deleteDuplicates(ListNode head) {
+    public ListNodeJava deleteDuplicates(ListNodeJava head) {
         if(head == null || head.next == null)
             return head;
-        ListNode curr = head;
+        ListNodeJava curr = head;
         while(curr.next != null){
             if(curr.val == curr.next.val){
                 curr.next = curr.next.next;

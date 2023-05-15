@@ -27,10 +27,10 @@ package com.atrilos.linkedList;
  * It is guaranteed that the list represents a number that does not have leading zeros.
  */
 public class AddTwoNumbers {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNodeJava addTwoNumbers(ListNodeJava l1, ListNodeJava l2) {
         int carry = 0;
-        ListNode result = new ListNode();
-        ListNode pointer = result;
+        ListNodeJava result = new ListNodeJava();
+        ListNodeJava pointer = result;
         while (l1 != null || l2 != null || carry != 0) {
             int i = l1 == null ? 0 : l1.val;
             int j = l2 == null ? 0 : l2.val;
@@ -41,7 +41,7 @@ public class AddTwoNumbers {
             } else {
                 carry = 0;
             }
-            pointer.next = new ListNode(sum);
+            pointer.next = new ListNodeJava(sum);
             pointer = pointer.next;
             if (l1 != null)
                 l1 = l1.next;
