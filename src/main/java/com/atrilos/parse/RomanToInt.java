@@ -44,7 +44,7 @@ package com.atrilos.parse;
  * It is guaranteed that s is a valid roman numeral in the range [1, 3999].
  */
 public class RomanToInt {
-    
+
     public int romanToInt(String s) {
         int ans = 0, num = 0;
         for (int i = s.length() - 1; i >= 0; i--) {
