@@ -23,8 +23,8 @@ fun minLengthAfterRemovals(nums: List<Int>): Int {
         val maxElement = pq.poll()
         val minElement = pq.poll()
 
-        if (maxElement.second - 1 != 0) pq.offer(maxElement.first to maxElement.second - 1);
-        if (minElement.second - 1 != 0) pq.offer(minElement.first to minElement.second - 1);
+        if (maxElement.second - 1 != 0) pq.offer(maxElement.first to maxElement.second - 1)
+        if (minElement.second - 1 != 0) pq.offer(minElement.first to minElement.second - 1)
     }
 
     // Step 4: Calculate the minimum length

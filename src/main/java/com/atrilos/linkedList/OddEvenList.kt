@@ -1,7 +1,5 @@
 package com.atrilos.linkedList
 
-import com.atrilos.trees.TreeNode
-
 fun oddEvenList(head: ListNode?): ListNode? {
     if (head?.next == null) return head
 
