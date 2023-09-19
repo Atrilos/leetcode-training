@@ -1,4 +1,4 @@
-package com.atrilos.mathGeometry;
+package com.atrilos.matrix;
 
 import java.util.LinkedList;
 import java.util.List;

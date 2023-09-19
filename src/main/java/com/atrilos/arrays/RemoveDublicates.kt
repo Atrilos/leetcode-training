@@ -1,8 +1,7 @@
 package com.atrilos.arrays
 
 /**
- * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
- * 26
+ * [26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
  */
 fun removeDuplicates(nums: IntArray): Int {
     var i = 0

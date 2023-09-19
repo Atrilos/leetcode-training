@@ -1,56 +1,53 @@
 package com.atrilos.strings
 
 /**
- * https://leetcode.com/problems/text-justification/
- * 68
+ * [68](https://leetcode.com/problems/text-justification/)
  */
-
 fun fullJustify(words: Array<String>, maxWidth: Int): List<String> {
-    val result = mutableListOf<String>()
-    val lineWords = mutableListOf<String>()
-    var lineLength = 0
-
-    for (word in words) {
-        if (lineLength + lineWords.size + word.length <= maxWidth) {
-            lineWords.add(word)
-            lineLength += word.length
-        } else {
-            result.add(constructLine(lineWords, maxWidth, lineLength))
-            lineWords.clear()
-            lineWords.add(word)
-            lineLength = word.length
+    val res = mutableListOf<String>()
+    var currentIndex = 0
+    while (true) {
+        val nextRange = getNextRange(currentIndex, words, maxWidth)
+        val rangeLength = nextRange.last - nextRange.first
+        if (nextRange.last == words.lastIndex) {
+            res.add(words.sliceArray(nextRange).joinToString(" ").padEnd(maxWidth))
+            break
         }
+        if (rangeLength == 0) {
+            res.add(words[nextRange.first].padEnd(maxWidth))
+            currentIndex = nextRange.last + 1
+            continue
+        }
+        val totalPadDistance = maxWidth - words.sliceArray(nextRange).fold(0) { acc, s -> acc + s.length }
+        val minPadDistance = totalPadDistance / rangeLength
+        var offset = totalPadDistance - (minPadDistance * rangeLength)
+        val sb = StringBuilder()
+        for (i in nextRange) {
+            if (i == nextRange.first) {
+                sb.append(words[i])
+            } else {
+                if (offset > 0) {
+                    sb.append(" ")
+                    offset--
+                }
+                sb.append(words[i].padStart(words[i].length + minPadDistance))
+            }
+        }
+        res.add(sb.toString())
+        currentIndex = nextRange.last + 1
     }
 
-    // Last line
-    if (lineWords.isNotEmpty()) {
-        val lastLine = lineWords.joinToString(" ")
-        result.add(lastLine.padEnd(maxWidth))
-    }
-
-    return result
+    return res
 }
 
-private fun constructLine(words: List<String>, maxWidth: Int, lineLength: Int): String {
-    val numWords = words.size
-    if (numWords == 1) {
-        return words[0].padEnd(maxWidth)
+private fun getNextRange(start: Int, words: Array<String>, maxWidth: Int): IntRange {
+    var end = start
+    var length = 0
+
+    while (end <= words.lastIndex && length <= maxWidth) {
+        length += words[end].length + (if (end == start) 0 else 1)
+        end++
     }
 
-    val totalSpaces = maxWidth - lineLength
-    val spaceSlots = numWords - 1
-    val baseSpace = totalSpaces / spaceSlots
-    val extraSpaceSlots = totalSpaces % spaceSlots
-
-    val lineBuilder = StringBuilder()
-    for (i in 0 until numWords - 1) {
-        lineBuilder.append(words[i])
-        lineBuilder.append(" ".repeat(baseSpace))
-        if (i < extraSpaceSlots) {
-            lineBuilder.append(" ")
-        }
-    }
-    lineBuilder.append(words.last())
-
-    return lineBuilder.toString()
+    return if (end == words.size && length <= maxWidth) start until end else start..end - 2
 }

@@ -38,7 +38,7 @@ public class LengthOfLongestSubstring {
     }
 
     public static int lengthOfLongestSubstring(String s) {
-        if (s.length() == 0) return 0;
+        if (s.isEmpty()) return 0;
 
         Set<Character> set = new LinkedHashSet<>();
         int n = s.length();
@@ -55,7 +55,6 @@ public class LengthOfLongestSubstring {
                 ++left;
             }
         }
-        System.out.println(set);
         return maxLength;
     }
 }

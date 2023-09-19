@@ -62,7 +62,7 @@ public class MinimumWindowSubstring {
                     ch = s.charAt(start++) - 'A';
                     dp[ch]++;
                     if (dp[ch] > 0) {
-                        if (res.length() == 0 || end - start < res.length())
+                        if (res.isEmpty() || end - start < res.length())
                             res = s.substring(start - 1, end);
                         matches++;
                         break;

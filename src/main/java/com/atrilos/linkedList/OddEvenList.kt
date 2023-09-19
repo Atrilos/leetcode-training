@@ -1,5 +1,7 @@
 package com.atrilos.linkedList
 
+import com.atrilos.trees.TreeNode
+
 fun oddEvenList(head: ListNode?): ListNode? {
     if (head?.next == null) return head
 
@@ -42,13 +44,4 @@ fun reverseList(head: ListNode?): ListNode? {
     }
 
     return newHead
-}
-
-fun main() {
-    val head = ListNode(1)
-    head.next = ListNode(2)
-    head.next!!.next = ListNode(3)
-    head.next!!.next!!.next = ListNode(4)
-    head.next!!.next!!.next!!.next = ListNode(5)
-    traverse(reverseList(head))
 }

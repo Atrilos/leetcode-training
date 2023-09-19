@@ -54,7 +54,7 @@ public class IsomorphicStrings {
                 mappingDictTtoS[c2] = c1;
             }
 
-            // Case 2: Ether mapping doesn't exist in one of the dictionaries or Mapping exists and
+            // Case 2: Either mapping doesn't exist in one of the dictionaries or Mapping exists and
             // it doesn't match in either of the dictionaries or both
             else if (mappingDictStoT[c1] != c2 || mappingDictTtoS[c2] != c1) {
                 return false;
