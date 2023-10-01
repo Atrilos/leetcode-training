@@ -3,6 +3,11 @@ package com.atrilos.trees
 class TreeNode(var `val`: Int) {
     var left: TreeNode? = null
     var right: TreeNode? = null
+
+    constructor(`val`: Int, left: TreeNode?, right: TreeNode?) : this(`val`) {
+        this.left = left
+        this.right = right
+    }
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
@@ -30,8 +35,8 @@ fun Array<Int?>.toTreeNode(): TreeNode? {
     fun helper(index: Int, root: TreeNode?): TreeNode? {
         if (index !in indices || this[index] == null) return null
         root?.`val` = this[index]!!
-        root?.left = helper(index * 2 + 1, TreeNode(0))
-        root?.right = helper(index * 2 + 2, TreeNode(0))
+        root?.left = if (index != 0 && this[index - 1] == null) helper(index + 1, TreeNode(0)) else helper(index * 2 + 1, TreeNode(0))
+        root?.right = if (index != 0 && this[index - 1] == null) helper(index + 2, TreeNode(0)) else helper(index * 2 + 2, TreeNode(0))
 
         return root
     }

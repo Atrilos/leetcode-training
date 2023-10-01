@@ -1,7 +1,5 @@
 package com.atrilos.graphs
 
-import kotlin.math.abs
-
 fun canVisitAllRooms(rooms: List<List<Int>>): Boolean {
     var cnt = 0
     val visited = BooleanArray(rooms.size)

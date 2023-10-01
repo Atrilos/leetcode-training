@@ -3,24 +3,23 @@ package com.atrilos.parse
 /**
  * [12](https://leetcode.com/problems/integer-to-roman/description/)
  */
-fun intToRoman(given: Int): String {
-    var num = given
-    val sb = StringBuilder()
-    val dict = listOf(
-            1000 to "M", 900 to "CM", 500 to "D", 400 to "CD", 100 to "C", 90 to "XC", 50 to "L",
-            40 to "XL", 10 to "X", 9 to "IX", 5 to "V", 4 to "IV", 1 to "I",
+fun intToRoman(num: Int): String {
+    val romanNumerals = linkedMapOf(
+        "M" to 1000, "CM" to 900,
+        "D" to 500, "CD" to 400,
+        "C" to 100, "XC" to 90,
+        "L" to 50, "XL" to 40,
+        "X" to 10, "IX" to 9,
+        "V" to 5, "IV" to 4,
+        "I" to 1
     )
-
-    var i = 0
-    while (num > 0) {
-        val (div, str) = dict[i]
-        if (num >= div) {
-            sb.append(str)
-            num -= div
-        } else {
-            i++
+    var number = num
+    val sb = StringBuilder()
+    for (i in romanNumerals) {
+        while (number >= i.value) {
+            sb.append(i.key)
+            number -= i.value
         }
     }
-
     return sb.toString()
 }
