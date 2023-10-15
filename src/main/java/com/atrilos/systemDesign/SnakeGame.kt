@@ -13,7 +13,7 @@ class SnakeGame(width: Int, height: Int, private val food: Array<IntArray>) {
     private val collisionDetection = mutableSetOf<Pair<Int, Int>>().apply { add(0 to 0) }
     private val snake = LinkedList<Pair<Int, Int>>().apply { add(0 to 0) }
     private val dirs: Map<String, Pair<Int, Int>> = mapOf(
-        "R" to (0 to 1), "L" to (0 to -1), "U" to (-1 to 0), "D" to (1 to 0)
+            "R" to (0 to 1), "L" to (0 to -1), "U" to (-1 to 0), "D" to (1 to 0)
     )
 
     fun move(direction: String): Int {
