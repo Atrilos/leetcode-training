@@ -4,19 +4,39 @@ package com.atrilos.strings
  * https://leetcode.com/problems/interleaving-string/
  * 97
  */
-fun main() {
-    println(isInterleave("aabcc", "dbbca", "aadbbcbcac"))
-}
-
-fun isInterleave(s1: String, s2: String, s3: String): Boolean {
-    val cache = mutableMapOf<Int, Boolean>()
-    fun dfs(p1: Int, p2: Int): Boolean = cache.getOrPut(p1 + p2 * 100) {
-        p1 < s1.length && p2 < s2.length && (
-                s1[p1] == s3[p1 + p2] && dfs(p1 + 1, p2)
-                        || s2[p2] == s3[p1 + p2] && dfs(p1, p2 + 1)
-                )
-                || p1 == s1.length && s2.substring(p2) == s3.substring(p1 + p2)
-                || p2 == s2.length && s1.substring(p1) == s3.substring(p1 + p2)
+class InterleavingStrings {
+    fun isInterleave(s1: String, s2: String, s3: String): Boolean {
+        if (s1.length + s2.length != s3.length) return false
+        val visited = Array(s1.length + 1) { IntArray(s2.length + 1) { -1 } }
+        return dfs(s1, s2, s3, 0, 0, 0, visited)
     }
-    return s1.length + s2.length == s3.length && dfs(0, 0)
+
+    private fun dfs(
+        s1: String,
+        s2: String,
+        s3: String,
+        i: Int,
+        j: Int,
+        k: Int,
+        visited: Array<IntArray>
+    ): Boolean {
+        if (i == s1.length) {
+            return s2.substring(j) == s3.substring(k)
+        }
+        if (j == s2.length) {
+            return s1.substring(i) == s3.substring(k)
+        }
+        if (visited[i][j] >= 0) {
+            return visited[i][j] == 1
+        }
+        var ans = false
+        if ((s1[i] == s3[k] && dfs(s1, s2, s3, i + 1, j, k + 1, visited))
+            || (s2[j] == s3[k] && dfs(s1, s2, s3, i, j + 1, k + 1, visited))
+        ) {
+            ans = true
+        }
+        visited[i][j] = if (ans) 1 else 0
+
+        return ans
+    }
 }

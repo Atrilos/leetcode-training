@@ -4,11 +4,6 @@ package com.atrilos.backtracking
  * https://leetcode.com/problems/combinations/
  * 77
  */
-
-fun main() {
-    println(combine(4, 4).joinToString())
-}
-
 fun combine(n: Int, k: Int): List<List<Int>> {
     val res = mutableListOf<List<Int>>()
     dfs(1, n, res, mutableListOf(), k)

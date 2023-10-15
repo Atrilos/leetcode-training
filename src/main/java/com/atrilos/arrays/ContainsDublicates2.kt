@@ -18,5 +18,5 @@ fun containsNearbyDuplicate(nums: IntArray, k: Int): Boolean {
 }
 
 fun main() {
-    containsNearbyDuplicate(intArrayOf(0,1,2,3,4,5,6),2)
+    println(containsNearbyDuplicate(intArrayOf(0, 1, 2, 3, 4, 5, 6), 2))
 }

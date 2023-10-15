@@ -13,7 +13,7 @@ fun letterCombinations(digits: String): List<String> {
     return result
 }
 
-fun dfs(currentString: StringBuilder, result: MutableList<String>, digits: String, pos: Int) {
+private fun dfs(currentString: StringBuilder, result: MutableList<String>, digits: String, pos: Int) {
     if (currentString.length == digits.length) {
         result += currentString.toString()
         return

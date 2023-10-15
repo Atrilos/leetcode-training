@@ -1,6 +1,10 @@
 package com.atrilos.stack;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
@@ -41,12 +45,11 @@ public class GenerateParentheses {
 
     private void backtrack(int openCount, int closedCount) {
         if (openCount == n && closedCount == n) {
-            Iterator<Character> iter = stack.iterator();
-            StringBuilder sb = new StringBuilder();
-            while (iter.hasNext()) {
-                sb.append(iter.next());
-            }
-            res.add(sb.toString());
+            res.add(
+                    stack.stream()
+                            .map(Object::toString)
+                            .collect(Collectors.joining())
+            );
         }
         if (openCount < n) {
             stack.offerLast('(');

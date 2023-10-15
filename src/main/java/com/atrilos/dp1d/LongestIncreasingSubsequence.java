@@ -33,10 +33,10 @@ public class LongestIncreasingSubsequence {
         List<Integer> arr = new ArrayList<>();
         arr.add(nums[0]);
         for (int i = 1; i < nums.length; i++) {
-            int index = binSearch(arr, nums[i]);
-            if (index == arr.size()) {
+            if (nums[i] > arr.get(arr.size() - 1)) {
                 arr.add(nums[i]);
             } else {
+                int index = binSearch(arr, nums[i]);
                 arr.set(index, nums[i]);
             }
         }

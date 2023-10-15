@@ -4,9 +4,6 @@ package com.atrilos.bit
  * https://leetcode.com/problems/counting-bits/
  * 338
  */
-fun main() {
-    println(countBits(16).joinToString())
-}
 fun countBits(n: Int): IntArray {
     val array = IntArray(n + 1)
 

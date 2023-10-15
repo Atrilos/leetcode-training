@@ -1,5 +1,7 @@
 package com.atrilos.trees
 
+import java.util.LinkedList
+
 class TreeNode(var `val`: Int) {
     var left: TreeNode? = null
     var right: TreeNode? = null
@@ -31,16 +33,26 @@ class TreeNode(var `val`: Int) {
 
 fun Array<Int?>.toTreeNode(): TreeNode? {
     if (isEmpty()) return null
-    val root = TreeNode(0)
-    fun helper(index: Int, root: TreeNode?): TreeNode? {
-        if (index !in indices || this[index] == null) return null
-        root?.`val` = this[index]!!
-        root?.left = if (index != 0 && this[index - 1] == null) helper(index + 1, TreeNode(0)) else helper(index * 2 + 1, TreeNode(0))
-        root?.right = if (index != 0 && this[index - 1] == null) helper(index + 2, TreeNode(0)) else helper(index * 2 + 2, TreeNode(0))
-
-        return root
+    var count = 0
+    val q = LinkedList<TreeNode?>()
+    val root = TreeNode(this[0]!!)
+    q.offerLast(root)
+    var curr: TreeNode? = null
+    for (i in 1..this.lastIndex) {
+        val node = this[i]?.let { TreeNode(it) }
+        if (count == 0) {
+            curr = q.removeFirst()
+            count++
+            curr?.left = node
+        } else {
+            count = 0
+            curr?.right = node
+        }
+        if (this[i] != null) {
+            q.offerLast(node)
+        }
     }
-    return helper(0, root)
+    return root
 }
 
 fun maxDepth(root: TreeNode?): Int {

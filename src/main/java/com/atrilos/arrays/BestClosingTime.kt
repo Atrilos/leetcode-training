@@ -4,9 +4,6 @@ package com.atrilos.arrays
  * https://leetcode.com/problems/minimum-penalty-for-a-shop/
  * 2483
  */
-fun main() {
-    println(bestClosingTime("YYNY"))
-}
 fun bestClosingTime(customers: String): Int {
     // Start with closing at hour 0 and assume the current penalty is 0
     var min = 0

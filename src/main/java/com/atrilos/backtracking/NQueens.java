@@ -49,12 +49,13 @@ public class NQueens {
 
     /**
      * Backtracking
-     * @param res reference to result list
-     * @param field chessboard representation
+     *
+     * @param res    reference to result list
+     * @param field  chessboard representation
      * @param column representation of available columns as bitset
-     * @param posD representation of available positive diagonals as bitset
-     * @param negD representation of available negative diagonals as bitset
-     * @param i current row
+     * @param posD   representation of available positive diagonals as bitset
+     * @param negD   representation of available negative diagonals as bitset
+     * @param i      current row
      */
     private void dfs(List<List<String>> res, char[][] field, int column, int posD, int negD, int i) {
         if (i >= field.length) {

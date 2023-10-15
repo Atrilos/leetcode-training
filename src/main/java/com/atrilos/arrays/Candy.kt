@@ -1,20 +1,19 @@
 package com.atrilos.arrays
 
 /**
- * [135](Candy)
+ * [135](https://leetcode.com/problems/candy/)
  */
 fun candy(ratings: IntArray): Int {
     val helper = IntArray(ratings.size) { 1 }
 
-    for (i in ratings.indices) {
+    for (i in 1..ratings.lastIndex) {
         if (ratings[i] > ratings[(i - 1).coerceAtLeast(0)]) {
             helper[i] = helper[i - 1] + 1
         }
     }
-    for (i in ratings.indices.reversed()) {
-        val nextIdx = (i + 1).coerceAtMost(ratings.lastIndex)
-        if (ratings[i] > ratings[nextIdx]) {
-            helper[i] = helper[i].coerceAtLeast(helper[nextIdx] + 1)
+    for (i in (0..<ratings.lastIndex).reversed()) {
+        if (ratings[i] > ratings[i + 1]) {
+            helper[i] = maxOf(helper[i], helper[i + 1] + 1)
         }
     }
 

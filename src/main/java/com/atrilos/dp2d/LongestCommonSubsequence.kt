@@ -1,10 +1,9 @@
 package com.atrilos.dp2d
 
 /**
- * https://leetcode.com/problems/longest-common-subsequence/
- * 1143
+ *
+ * [1143](https://leetcode.com/problems/longest-common-subsequence/)
  */
-
 fun longestCommonSubsequence(text1: String, text2: String): Int {
     val n = text1.length
     val m = text2.length
@@ -14,7 +13,7 @@ fun longestCommonSubsequence(text1: String, text2: String): Int {
             if (text1[i - 1] == text2[j - 1]) {
                 dp[i][j] = dp[i - 1][j - 1] + 1
             } else {
-                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
+                dp[i][j] = maxOf(dp[i - 1][j], dp[i][j - 1])
             }
         }
     }
