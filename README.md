@@ -1,4 +1,4 @@
-# neetcode
+# leetcode-training
 
 Coding interview prep
 
