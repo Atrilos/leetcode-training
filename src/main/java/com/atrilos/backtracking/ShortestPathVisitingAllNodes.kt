@@ -1,5 +1,6 @@
 package com.atrilos.backtracking
 
+
 /**
  * [847](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)
  */
@@ -33,5 +34,42 @@ fun shortestPathLength(graph: Array<IntArray>): Int {
         }
     }
 
+    return -1
+}
+
+fun shortestPathLengthEasier(graph: Array<IntArray>): Int {
+    if (graph.size == 1) {
+        return 0
+    }
+
+    val n = graph.size
+    val endingMask = (1 shl n) - 1
+    val seen = Array(n) { BooleanArray(endingMask) }
+    val queue = java.util.ArrayDeque<IntArray>()
+
+    for (i in 0 until n) {
+        queue.add(intArrayOf(i, 1 shl i))
+        seen[i][1 shl i] = true
+    }
+
+    var steps = 0
+    while (queue.isNotEmpty()) {
+        repeat(queue.size) {
+            val currentPair = queue.removeFirst()
+            val node = currentPair[0]
+            val mask = currentPair[1]
+            for (neighbor in graph[node]) {
+                val nextMask = mask or (1 shl neighbor)
+                if (nextMask == endingMask) {
+                    return 1 + steps
+                }
+                if (!seen[neighbor][nextMask]) {
+                    seen[neighbor][nextMask] = true
+                    queue.addLast(intArrayOf(neighbor, nextMask))
+                }
+            }
+        }
+        steps++
+    }
     return -1
 }
