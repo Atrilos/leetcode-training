@@ -60,28 +60,29 @@ import java.util.List;
  */
 public class CloneGraph {
     public Node cloneGraph(Node node) {
-        if(node == null){
+        if (node == null) {
             return null;
         }
 
-        HashMap<Integer,Node> map = new HashMap<>();
-        return dfs(node,map);
+        HashMap<Integer, Node> map = new HashMap<>();
+        return dfs(node, map);
     }
 
-    public Node dfs(Node node, HashMap<Integer,Node> map){
+    public Node dfs(Node node, HashMap<Integer, Node> map) {
         Node nodeClone = new Node(node.val);
-        map.put(node.val,nodeClone);
-        for(Node nbr : node.neighbors){
+        map.put(node.val, nodeClone);
+        for (Node nbr : node.neighbors) {
             Node nbrClone;
-            if(!map.containsKey(nbr.val)){
+            if (!map.containsKey(nbr.val)) {
                 nbrClone = dfs(nbr, map);
-            }else{
+            } else {
                 nbrClone = map.get(nbr.val);
             }
             nodeClone.neighbors.add(nbrClone);
         }
         return nodeClone;
     }
+
 }
 
 class Node {

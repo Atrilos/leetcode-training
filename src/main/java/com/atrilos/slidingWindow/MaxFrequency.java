@@ -52,17 +52,15 @@ public class MaxFrequency {
      */
     public int maxFrequency(int[] nums, int k) {
         countingSort(nums);
-        int start = 0;
-        long total = 0;
+        int l = 0;
+        long total = 0L;
         int res = 1;
-        for (int end = 0; end < nums.length; end++) {
-            int length = end - start + 1;
-            total += nums[end];
-            while ((long) nums[end] * length > k + total) {
-                total -= nums[start++];
-                length--;
+        for (int r = 0; r < nums.length; r++) {
+            total += nums[r];
+            while ((long) nums[r] * (r - l + 1) > k + total) {
+                total -= nums[l++];
             }
-            res = Math.max(res, length);
+            res = Math.max(res, r - l + 1);
         }
 
         return res;
@@ -70,9 +68,9 @@ public class MaxFrequency {
 
     // Counting Sort: O(n)
     private void countingSort(int[] nums) {
-        int max = IntStream.of(nums).parallel().max().orElseThrow();
+        int max = IntStream.of(nums).max().orElseThrow();
         int[] map = new int[max + 1];
-        IntStream.of(nums).parallel().forEach(i -> map[i] += 1);
+        IntStream.of(nums).forEach(i -> map[i]++);
         int i = 0;
         int j = 0;
         while (i <= max) {

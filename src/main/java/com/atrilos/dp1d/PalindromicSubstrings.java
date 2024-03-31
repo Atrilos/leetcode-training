@@ -1,8 +1,5 @@
 package com.atrilos.dp1d;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Given a string s, return the number of palindromic substrings in it.
  * <p>
@@ -33,6 +30,7 @@ public class PalindromicSubstrings {
     public static void main(String[] args) {
         System.out.println(new PalindromicSubstrings().countSubstrings("abc"));
     }
+
     public int countSubstrings(String s) {
         int count = 0;
         for (int i = 0; i < s.length(); i++) {

@@ -28,4 +28,9 @@ class FactorCombinations {
         backtrack(2, m)
         return res
     }
+
+}
+
+fun main() {
+    println(FactorCombinations().getFactors(100))
 }

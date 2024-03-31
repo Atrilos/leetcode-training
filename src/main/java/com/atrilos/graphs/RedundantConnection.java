@@ -45,35 +45,36 @@ public class RedundantConnection {
      */
     public int[] findRedundantConnection(int[][] edges) {
         int n = edges.length;
-        int[] parents = new int[n + 1];
-        Arrays.fill(parents, -1);
+        int[] parent = new int[n + 1];
+        Arrays.fill(parent, -1);
 
         for (int[] edge : edges) {
             int a = edge[0], b = edge[1];
-            int parentA = find(parents, a);
-            int parentB = find(parents, b);
+            int parentA = find(parent, a);
+            int parentB = find(parent, b);
             if (parentA == parentB) {   // cycle
                 return edge;
             } else {
-                union(parents, parentA, parentB);
+                union(parent, parentA, parentB);
             }
         }
 
         throw new AssertionError();
     }
 
-    private int find(int[] parents, int v) {
-        if (parents[v] < 0)
+    private int find(int[] parent, int v) {
+        if (parent[v] < 0)
             return v;
-        return find(parents, parents[v]);
+        parent[v] = find(parent, parent[v]);
+        return parent[v];
     }
 
-    private void union(int[] parents, int a, int b) {
-        if (parents[a] > parents[b]) {
-            union(parents, b, a);
+    private void union(int[] parent, int a, int b) {
+        if (parent[a] > parent[b]) {
+            union(parent, b, a);
         } else {
-            parents[a] += parents[b];
-            parents[b] = a;
+            parent[a] += parent[b];
+            parent[b] = a;
         }
     }
 }

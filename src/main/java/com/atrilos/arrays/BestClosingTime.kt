@@ -1,5 +1,6 @@
 package com.atrilos.arrays
 
+
 /**
  * https://leetcode.com/problems/minimum-penalty-for-a-shop/
  * 2483

@@ -3,6 +3,8 @@ build/
 *.txt
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/test/**/build/
+/src/main/java/com/atrilos/unsorted
+input.txt
 
 ### IntelliJ IDEA ###
 .idea
