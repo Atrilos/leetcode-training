@@ -33,6 +33,9 @@ WITH cte AS
 SELECT Department, Employee, Salary
 FROM cte
 WHERE dr <= 3;
+SELECT score, dense_rank() OVER (ORDER BY score DESC ) 'rank'
+FROM scores
+ORDER BY 2;
 
 -- [1667](https://leetcode.com/problems/fix-names-in-a-table/)
 SELECT user_id,
