@@ -42,11 +42,10 @@ class MaxRectangle {
         // Stack to keep track of indices with potentially decreasing heights
         val stack = java.util.ArrayDeque<Int>()
         var max = 0
-        var idx = 0
 
-        while (idx < nHeights) {
+        for (idx in 0..<nHeights) {
             // Maintain increasing stack
-            while (stack.isNotEmpty() && heights[idx] < heights[stack.peekLast()]){
+            while (stack.isNotEmpty() && heights[idx] < heights[stack.peekLast()]) {
                 val shortest = heights[stack.removeLast()]
                 val width = idx - if (stack.isEmpty()) 0 else (stack.peekLast() + 1)
                 val area = shortest * width
@@ -54,7 +53,6 @@ class MaxRectangle {
             }
 
             stack.addLast(idx)
-            ++idx
         }
 
         // Calculate remaining heights from last to first
@@ -67,4 +65,14 @@ class MaxRectangle {
 
         return max
     }
+}
+
+fun main() {
+    val matrix = arrayOf(
+        charArrayOf('1', '0', '1', '0', '0'),
+        charArrayOf('1', '0', '1', '1', '1'),
+        charArrayOf('1', '1', '1', '1', '1'),
+        charArrayOf('1', '0', '0', '1', '0')
+    )
+    println(MaxRectangle().maximalRectangle(matrix))
 }
