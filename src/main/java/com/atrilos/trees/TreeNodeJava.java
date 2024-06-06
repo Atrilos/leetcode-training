@@ -8,11 +8,11 @@ public class TreeNodeJava {
     TreeNodeJava() {
     }
 
-    TreeNodeJava(int val) {
+    public TreeNodeJava(int val) {
         this.val = val;
     }
 
-    TreeNodeJava(int val, TreeNodeJava left, TreeNodeJava right) {
+    public TreeNodeJava(int val, TreeNodeJava left, TreeNodeJava right) {
         this.val = val;
         this.left = left;
         this.right = right;

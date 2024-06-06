@@ -71,3 +71,31 @@ class MaxXOROf2EleInArr {
         return max
     }
 }
+
+class MaxXOROf2EleInArrFast {
+    private val MAX_BIT_COUNT = 31
+
+    fun findMaximumXOR(nums: IntArray): Int {
+        var result = 0
+        val set = mutableSetOf<Int>()
+
+        val maxBitContForNums = MAX_BIT_COUNT - nums.max().countLeadingZeroBits()
+
+        for (i in maxBitContForNums downTo 0) {
+            result = result shl 1
+            val next = result or 1
+            set.clear()
+            var j = 0
+            while (j < nums.size && result != next) {
+                val current = nums[j] shr i
+                if (set.contains(next xor current)) {
+                    result = next
+                }
+                set.add(current)
+                j++
+            }
+        }
+
+        return result
+    }
+}

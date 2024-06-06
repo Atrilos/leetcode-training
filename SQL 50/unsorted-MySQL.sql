@@ -63,3 +63,17 @@ FROM users u
          LEFT JOIN orders o ON u.user_id = o.buyer_id AND YEAR(o.order_date) = 2019
 GROUP BY 1
 ORDER BY 1;
+
+-- [180](https://leetcode.com/problems/consecutive-numbers/description/)
+WITH cte AS
+         (SELECT id,
+                 num,
+                 LEAD(num, 1) OVER (ORDER BY id)                                                     next_val,
+                 LEAD(num, 2) OVER (ORDER BY id)                                                     next_2,
+                 id = LEAD(id, 1) OVER (ORDER BY id) - 1 AND id = LEAD(id, 2) OVER (ORDER BY id) - 2 flag
+          FROM logs)
+SELECT DISTINCT num ConsecutiveNums
+FROM cte
+WHERE num = next_val
+  AND num = next_2
+  AND flag;
